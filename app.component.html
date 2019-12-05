@@ -1,0 +1,27 @@
+<div style="text-align:left;width:500px;">
+  <h1>
+      {{ title }}!
+  </h1>
+
+  <table >
+      <!-- ADD HEADERS -->
+      <tr>
+          <th>postId</th>
+              <th>id</th>
+                  <th>name</th>
+                  <th>email</th>
+                  <th>body</th>
+      </tr>
+
+      <!-- BIND ARRAY TO TABLE -->
+      <tr *ngFor="let res of abc">
+          <td>{{res.postId}}</td>
+              <td>{{res.id}}</td>
+                  <td>{{res.name}}</td>
+                  
+                  <td>{{res.email}}</td>
+                  
+                  <td>{{res.body}}</td>
+      </tr>
+  </table>
+</div>
